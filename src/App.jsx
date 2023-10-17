@@ -1,35 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import roses from "../public/img/roses.jpg";
+import "./style.scss";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <section>
+      <img src={roses} alt="rose" ></img>
+      <div className="texte">
+        <h1>Rozes</h1>
+        <h2>Under the Grave </h2>
+        <h3>(2016)</h3>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="star">
+        <p>Rate this album</p>
+        <div className="stars">
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </section>
+  );
 }
 
-export default App
+export default App;
