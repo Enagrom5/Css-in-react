@@ -3,10 +3,14 @@ $color:black;
 :root{
     width: 100vw;
     height: 100vh;
+    
 }
 body{
-    background-color: $background-color;
+    background-color: white;
     color: $color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
 }
 section{
@@ -15,6 +19,8 @@ grid-template-columns: 1fr 2fr ;
 grid-template-rows: 2fr 1fr;
     justify-content: space-around;
     border: 2px solid;
+    background-color: $background-color;
+    border-radius: 20px;
    
 }
 .texte{
@@ -37,6 +43,9 @@ border-bottom: 2px solid;
 img{
     border-bottom: 2px solid;
     border: 2px solid;
+    border-top-left-radius: 17px;
+
+    
 }
 
 
